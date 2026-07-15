@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Page Title</title>
+    <link rel='stylesheet' href='main.css'>
+</head>
+<body>
+<h1>Masi</h1>
+    
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas quis commodi eos amet quasi. Vitae nostrum vero voluptates porro illum ratione, magni doloribus architecto. Repellendus quod saepe est sapiente ipsum?
+    </p>
+    
+    <h2>Ich bin Programmierer</h2>
+
+<figure></figure>
+
+    <figure>
+        <img
+            src="avatar.jpg" 
+            alt="Web Development" 
+            width="300" 
+            height="300" 
+            loading="lazy"
+        >
+        <figcaption>
+            Hello!
+        </figcaption>
+    </figure>
+
+<table border="1" style="width: 100%;">
+    <thead style="background-color: rgb(195, 194, 194);">
+        <tr>
+            <th span="col">Fähigkeiten-Übersicht</th>
+            
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>HTML</td>
+            <t
+        </tr>
+        <tr>
+            <td>CSS</td>
+        </tr>
+        <tr>
+            <td>JavaScript</td>
+        </tr>
+        <tr>
+            <td>Python</td>
+        </tr>
+    </tbody>
+    </table>
+
+
+
+    <form action="/kontakt" method="post">
+        <fieldset>
+        <legend>Kontaktdaten</legend>
+        <label for="name">Name *</label>
+        <input type="text" id="name" name="name"
+        required minlength="2">
+        <label for="email">E-Mail *</label>
+        <input type="email" id="email" name="email" required>
+        <label for="telefon">Telefon</label>
+        <input type="tel" id="telefon" name="telefon">
+        </fieldset>
+        <fieldset>
+        <legend>Nachricht</legend>
+        <label for="betreff">Betreff *</label>
+        <select id="betreff" name="betreff" required>
+        <option value="" disabled selected>— bitte wählen —</option>
+        <option value="frage">Allgemeine Frage</option>
+        <option value="angebot">Angebotsanfrage</option>
+        <option value="feedback">Feedback</option>
+        </select>
+        <label for="nachricht">Nachricht *</label>
+        <textarea id="nachricht" name="nachricht"
+        rows="6" required></textarea>
+        </fieldset>
+        <button type="submit">Nachricht absenden</button>
+        </form>
+
+    
+</body>
+</html>
