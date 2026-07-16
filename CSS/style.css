@@ -1,0 +1,105 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #121212;
+    color: #f5f5f5;
+    font-family: Inter, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {    
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+}
+
+p {
+    color: #a0a0a0;
+}
+
+a {
+    color: #4f8cff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #6aa3ff;
+}
+
+/* Buttons */
+
+button,
+.btn {
+    background: #4f8cff;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    padding: 0.7rem 1.3rem;
+    cursor: pointer;
+    transition: 0.2s ease;
+    font-size: 0.95rem;
+}
+
+button:hover,
+.btn:hover {
+    background: #6aa3ff;
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Inputs */
+
+input,
+textarea,
+select {
+    width: 100%;
+    background: #252525;
+    color: #f5f5f5;
+    border: 1px solid #2f2f2f;
+    border-radius: 10px;
+    padding: 0.8rem;
+    transition: 0.2s ease;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: #4f8cff;
+}
+
+/* Tables */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 1rem;
+    border-bottom: 1px solid #2f2f2f;
+    text-align: left;
+}
+
+th {
+    background: #1b1b1b;
+    color: #ffffff;
+}
+
+tr:hover {
+    background: #1f1f1f;
+}
