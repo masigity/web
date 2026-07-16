@@ -51,37 +51,41 @@
             <td>Python</td>
         </tr>
     </tbody>
-    </table>
+</table>
 
 
 
-    <form action="/kontakt" method="post">
-        <fieldset>
+<form action="/kontakt" method="post">
+    <fieldset>
         <legend>Kontaktdaten</legend>
+
         <label for="name">Name *</label>
         <input type="text" id="name" name="name"
-        required minlength="2">
+    required minlength="2">
+
         <label for="email">E-Mail *</label>
         <input type="email" id="email" name="email" required>
+        
         <label for="telefon">Telefon</label>
         <input type="tel" id="telefon" name="telefon">
-        </fieldset>
-        <fieldset>
+    </fieldset>
+    
+    <fieldset>
         <legend>Nachricht</legend>
+
         <label for="betreff">Betreff *</label>
         <select id="betreff" name="betreff" required>
         <option value="" disabled selected>— bitte wählen —</option>
-        <option value="frage">Allgemeine Frage</option>
-        <option value="angebot">Angebotsanfrage</option>
-        <option value="feedback">Feedback</option>
+        <option value="allgemeine_frage">Allgemeine Frage</option>
+        <option value="technische_frage">Technische Frage</option>
+        <option value="privatnachricht">Privatnachricht</option>
         </select>
-        <label for="nachricht">Nachricht *</label>
+        <label for="nachricht">Nachricht</label>
         <textarea id="nachricht" name="nachricht"
         rows="6" required></textarea>
-        </fieldset>
-        <button type="submit">Senden</button>
-        </form>
+    </fieldset>
 
-    
+    <button type="submit">Submit</button>
+</form>    
 </body>
 </html>
