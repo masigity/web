@@ -7,7 +7,20 @@
     <link rel='stylesheet' href='CSS/style.css'>
 </head>
 <body>
-<h1>Masi</h1>    
+    <header>
+      <h1>Masi</h1>
+      <p>Webentwicklerin in Ausbildung</p>
+
+      <nav>
+        <ul>
+          <li><a href="#ueber-mich">Über mich</a></li>
+          <li><a href="#faehigkeiten">Fähigkeiten</a></li>
+          <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header> 
+    <main>
+        <section id="ueber-mich">
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas quis commodi eos amet quasi. Vitae nostrum vero voluptates porro illum ratione, magni doloribus architecto. Repellendus quod saepe est sapiente ipsum?
     </p>    
     <h2>Ich bin Programmierer</h2>
@@ -24,7 +37,9 @@
             Repellendus quod saepe est sapiente ipsum?
         </figcaption>
     </figure>
+    </section>
 
+<section id="faehigkeiten">
 <table border="1" style="width: 100%;">
     <thead style="background-color: rgb(195, 194, 194);">
         <tr>
@@ -49,8 +64,9 @@
     </tbody>
 </table>
 
+</section>
 
-
+ <section id="kontakt">
 <form action="/kontakt" method="post">
     <fieldset>
         <legend>Kontaktdaten</legend>
@@ -82,6 +98,11 @@
     </fieldset>
 
     <button type="submit">Submit</button>
-</form>    
+</form>
+</section>
+</main>
+<footer>
+    <p>&copy; 2026 Masi. All rights reserved.</p>
+</footer>
 </body>
 </html>
