@@ -4,107 +4,207 @@
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <title>Masi Profile</title>
-    <link rel='stylesheet' href='CSS/style.css'>
+    <link rel='stylesheet' href='css/style.css'>
 </head>
 <body>
-    <header>
-      <div>
-        <h1>Masi</h1>
-        <p>Webentwicklerin in Ausbildung</p>
-      </div>
+    <!-- 1. Add this wrapper container -->
+    <div class="page-layout">        
+        <aside class="page-sidebar">
+            <!-- Profile Header & Photo -->
+            <div class="sidebar-panel profile-card">
+                <h1>Masi</h1>
+                <figure>
+                    <img
+                        class="profile-photo"
+                        src="images/avatar.png" 
+                        alt="Web Development" 
+                        loading="lazy"
+                    />
+                    <figcaption>
+                        Webentwickler (Weiterbildung Web Technology, Hochschule Hannover)
+                    </figcaption>
+                </figure>        
+            </div> 
 
-      <nav>
-        <ul>
-          <li><a href="#ueber-mich">Über mich</a></li>
-          <li><a href="#faehigkeiten">Fähigkeiten</a></li>
-          <li><a href="#kontakt">Kontakt</a></li>
-        </ul>
-      </nav>
-    </header>
-    
-    <main>
-        <section id="ueber-mich">
-    <p>Hallo! Ich bin Masi und Ich bin Programmierer.</p>
-    <p>Ich habe an der Universität Technische Informatik studiert. Jetzt studiere ich Webentwicklung (Web Development).
-    </p>    
-    <figure>
-        <img
-            src="avatar.jpg" 
-            alt="Web Development" 
-            width="300"
-            height="300"
-            loading="lazy"
-        />
-        <figcaption>
-            Repellendus quod saepe est sapiente ipsum?
-        </figcaption>
-    </figure>
-    </section>
+            <!-- Navigation Links -->
+            <nav class="sidebar-panel navigation-card">
+                <ul>
+                    <li><a href="#ueber-mich">Über mich</a></li>
+                    <li><a href="#faehigkeiten">Fähigkeiten</a></li>
+                    <li><a href="#kontakt">Kontakt</a></li>
+                </ul>
+            </nav>
+        </aside>
 
-<section id="faehigkeiten">
-<table border="1" style="width: 100%;">
-    <thead style="background-color: rgb(195, 194, 194);">
-        <tr>
-            <th span="col">Fähigkeiten-Übersicht</th>
-            
-    </thead>
 
-    <tbody>
-        <tr>
-            <td>HTML</td>
-            <t
-        </tr>
-        <tr>
-            <td>CSS</td>
-        </tr>
-        <tr>
-            <td>JavaScript</td>
-        </tr>
-        <tr>
-            <td>Python</td>
-        </tr>
-    </tbody>
-</table>
+        <!-- Right Column -->
+        <main class="page-content">
+            <!-- Navigation Links -->
+            <div class="navigation-card">
+                <section id="ueber-mich">
+                    <h1>Über mich</h1>
 
-</section>
+                    <p>Hallo! Ich bin Masi und ich bin Programmierer.</p>
 
- <section id="kontakt">
-<form action="/kontakt" method="post">
-    <fieldset>
-        <legend>Kontaktdaten</legend>
+                    <p>
+                        Ich habe Technische Informatik an der Universität studiert.
+                        Jetzt lerne ich Webentwicklung und Data Science.
+                        Ich programmiere gern und arbeite auch gern mit Hardware und Elektronik.
+                    </p>
 
-        <label for="name">Name *</label>
-        <input type="text" id="name" name="name"
-    required minlength="2">
+                    <h3>Meine Interessen</h3>
+                    <ul>
+                        <li>HTML, CSS und JavaScript</li>
+                        <li>Python und Data Science</li>
+                        <li>Elektronik und Computer-Hardware</li>
+                        <li>Bücher lesen</li>
+                        <li>Malen und kreative Materialien</li>
+                    </ul>
 
-        <label for="email">E-Mail *</label>
-        <input type="email" id="email" name="email" required>
-        
-        <label for="telefon">Telefon</label>
-        <input type="tel" id="telefon" name="telefon">
-    </fieldset>
-    
-    <fieldset>
-        <legend>Nachricht</legend>
+                    <h3>Meine Top 3 Skills</h3>
+                    <ol>
+                        <li>HTML und CSS für Webseiten</li>
+                        <li>Probleme mit Python lösen</li>
+                        <li>Logisch denken und Neues lernen</li>
+                    </ol>
 
-        <label for="betreff">Betreff *</label>
-        <select id="betreff" name="betreff" required>
-        <option value="" disabled selected>— bitte wählen —</option>
-        <option value="allgemeine_frage">Allgemeine Frage</option>
-        <option value="technische_frage">Technische Frage</option>
-        <option value="privatnachricht">Privatnachricht</option>
-        </select>
-        <label for="nachricht">Nachricht</label>
-        <textarea id="nachricht" name="nachricht"
-        rows="6" required></textarea>
-    </fieldset>
+                    <p>
+                        Ich lerne Webentwicklung und Programmierung mit verschiedenen
+                        Online-Ressourcen. Besonders hilfreich sind:
+                        <a href="https://www.w3schools.com/"
+                        target="_blank"
+                        rel="noopener noreferrer">W3Schools</a>
+                        <a href="https://developer.mozilla.org/de/docs/Web/HTML"
+                        target="_blank"
+                        rel="noopener noreferrer">MDN Web Docs</a>
+                        <a href="https://www.freecodecamp.org/"
+                        target="_blank"
+                        rel="noopener noreferrer">freeCodeCamp</a>
+                        und die offizielle:
+                        <a href="https://docs.python.org/3/"
+                        target="_blank"
+                        rel="noopener noreferrer">Python-Dokumentation</a>
+                    </p>
+                </section>
+            </div>
 
-    <button type="submit">Submit</button>
-</form>
-</section>
-</main>
-<footer>
-    <p>&copy; 2026 Masi. All rights reserved.</p>
-</footer>
+            <div class="navigation-card">
+                <section id="faehigkeiten">
+                    <h1>Fähigkeiten</h1>
+
+                    <p>
+                        Ich lerne jeden Tag neue Technologien.
+                        Besonders mag ich HTML, CSS, JavaScript und Python.
+                        Ich interessiere mich auch für Data Science,
+                        Elektronik und Computer-Hardware.
+                        In meiner Freizeit lese ich Bücher oder male gern.
+                    </p>
+
+                    <h2>Fähigkeiten-Übersicht</h2>
+
+                    <p>
+                        Ich habe schon Erfahrungen mit verschiedenen Programmiersprachen.
+                        Im Moment verbessere ich meine Kenntnisse durch kleine Projekte
+                        und regelmäßiges Üben.
+                    </p>
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th scope="col">Bereich</th>
+                                <th scope="col">Kenntnisstand</th>
+                                <th scope="col">Seit</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">HTML</th>
+                                <td>Fortgeschritten</td>
+                                <td>6 Monate</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">CSS</th>
+                                <td>Gut</td>
+                                <td>5 Monate</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">JavaScript</th>
+                                <td>Grundlagen</td>
+                                <td>3 Monate</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Python</th>
+                                <td>Gut</td>
+                                <td>1 Jahr</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Data Science</th>
+                                <td>Grundlagen</td>
+                                <td>6 Monate</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Elektronik</th>
+                                <td>Grundlagen</td>
+                                <td>2 Jahre</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </div>
+             
+                
+            <div class="navigation-card">
+                <section id="kontakt">
+                    <h1>Kontakt</h1>
+                    <p>
+                        Du kannst mir gerne eine E-Mail an
+                        <a href="mailto:masi@example.com">masi@example.com</a>
+                        schreiben oder das folgende Formular nutzen.
+                    </p>
+
+                    <form action="https://example.com/post" method="post">
+                        <div>
+                            <label for="name">Name*</label>
+                            <input type="text" id="name" name="name" required />
+                        </div>
+
+                        <div>
+                            <label for="email">E-Mail*</label>
+                            <input type="email" id="email" name="email" required />
+                        </div>
+
+                        <div>
+                            <label for="telefon">Telefon</label>
+                            <input type="tel" id="telefon" name="telefon" />
+                        </div>
+
+                        <div>
+                            <label for="betreff">Betreff*</label>
+                            <input type="text" id="betreff" name="betreff" required />
+                        </div>
+
+                        <div>
+                            <label for="nachricht">Nachricht*</label>
+                            <textarea
+                            id="nachricht"
+                            name="nachricht"
+                            rows="6"
+                            placeholder="Deine Nachricht..."
+                            required
+                            ></textarea>
+                        </div>
+                        <br>
+                        <button type="submit">Nachricht senden</button>
+                    </form>                    
+                </section>
+            </div>    
+
+
+            <footer>
+                <p >&copy; 2026 Masi. All rights reserved.</p>
+            </footer>
+        </main>        
+    </div> <!-- <div class="page-layout"> -->
+
 </body>
 </html>
