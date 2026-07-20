@@ -72,6 +72,35 @@ th, td {
   text-align: left;
 }
 
+.services {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.service-card {
+    width: 300px;
+    text-align: center;
+}
+
+.service-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.service-card h3 {
+    margin: 15px 0 10px;
+}
+
+.service-card p {
+    color: #555;
+    line-height: 1.5;
+}
+
+
+
 footer {
   background-color: #23bdf4;
   color: #fff;
