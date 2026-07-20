@@ -112,7 +112,7 @@ body {
 /* right-hand content Styling */
 .page-content {
     background: linear-gradient(135deg, #0f121d 0%, #090a10 100%);
-    padding: 32px;
+    padding: 24px;
     overflow-y: auto; 
     gap: 24px;
     display: flex;
