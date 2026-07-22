@@ -1,3 +1,4 @@
+/* Reset all browser default */
 * {
     margin: 0;
     padding: 0;
@@ -11,6 +12,27 @@ body {
     line-height: 1.6;
     font-size: 16px;
 }
+
+/* Header Styling */
+header {
+    background: #2c3e50;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
 
 /* Grid Container */
 .page-layout {
@@ -53,7 +75,7 @@ body {
 }
 
 /* Panel Styling */
-.profile-card h1 {
+.profile-card h2 {
     font-size: 1.5rem;
     margin-bottom: 16px;
     color: #ffffff;
